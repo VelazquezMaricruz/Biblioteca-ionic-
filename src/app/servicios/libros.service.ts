@@ -21,4 +21,9 @@ export class LibrosService {
   public post(libros: Libros): Observable<any>{
     return this.http.post(this.url,libros,{ responseType: 'text'});
   }
+
+  public put(libros: Libros): Observable<any>{
+    return this.http.put(this.url,libros,{ responseType: 'text'});
+  }
+
 }
