@@ -17,4 +17,8 @@ export class LibrosService {
   public get():Observable<Libros[]>{
     return this.http.get<Libros[]>(this.url);
   }
+
+  public post(libros: Libros): Observable<any>{
+    return this.http.post(this.url,libros,{ responseType: 'text'});
+  }
 }
