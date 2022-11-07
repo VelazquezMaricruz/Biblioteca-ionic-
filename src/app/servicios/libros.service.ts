@@ -26,4 +26,13 @@ export class LibrosService {
     return this.http.put(this.url,libros,{ responseType: 'text'});
   }
 
+ 
+  public delete(libros: Libros): Observable<any>{
+    return this.http.delete(`${this.url}/${libros.id}`,{ responseType: 'text'});
+  }
+
 }
+
+
+
+

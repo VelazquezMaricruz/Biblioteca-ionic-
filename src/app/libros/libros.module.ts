@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { IonicModule, ToastController } from '@ionic/angular';
+import { AlertController, IonicModule, ToastController } from '@ionic/angular';
 
 import { LibrosPageRoutingModule } from './libros-routing.module';
 
@@ -18,6 +18,6 @@ import { FormularioLibroComponent } from './formulario-libro/formulario-libro.co
     ReactiveFormsModule
   ],
   declarations: [LibrosPage, FormularioLibroComponent],
-  providers: [ToastController]
+  providers: [ToastController, AlertController]
 })
 export class LibrosPageModule {}
